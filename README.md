@@ -21,6 +21,7 @@ Logistic Regression and K-Nearest Neighbors.
 ├── Presentation/  # project presentation (.pptx)
 ├── tests/         # pytest data-validation suite
 ├── examples/      # runnable data-summary script
+├── Makefile       # setup/test/summary shortcuts
 └── requirements.txt
 ```
 
@@ -79,6 +80,14 @@ computed from the committed files:
 
 ```
 python examples/data_summary.py
+```
+
+## Make shortcuts
+
+```
+make setup    # install dependencies
+make test     # run the data-validation suite
+make summary  # print the data summary
 ```
 
 ## How to run
