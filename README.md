@@ -20,6 +20,7 @@ Logistic Regression and K-Nearest Neighbors.
 ├── Images/        # EDA plots and ROC curves
 ├── Presentation/  # project presentation (.pptx)
 ├── tests/         # pytest data-validation suite
+├── examples/      # runnable data-summary script
 └── requirements.txt
 ```
 
@@ -69,6 +70,16 @@ positives. ROC curves live in `Images/roc_logistic.png` and `Images/roc_knn.png`
 `tests/test_data.py` validates the committed data artifacts (schema, no
 missing values, binary target, sane clinical ranges, valid model metrics).
 Install deps with `pip install -r requirements.txt` and run `pytest tests/`.
+
+## Examples
+
+`examples/data_summary.py` prints the dataset shape, target balance,
+mean clinical values by target, and the best model by accuracy, all
+computed from the committed files:
+
+```
+python examples/data_summary.py
+```
 
 ## How to run
 Open `Code/heart analysis Final Project .R` in RStudio and run top to bottom.
