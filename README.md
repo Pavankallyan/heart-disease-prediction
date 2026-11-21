@@ -70,6 +70,8 @@ positives. ROC curves live in `Images/roc_logistic.png` and `Images/roc_knn.png`
 
 `tests/test_data.py` validates the committed data artifacts (schema, no
 missing values, binary target, sane clinical ranges, valid model metrics).
+`tests/test_summary.py` covers the example script's helpers (loading, target
+balance, means by target, best-model pick) against the same committed files.
 Install deps with `pip install -r requirements.txt` and run `pytest tests/`.
 
 ## Examples
